@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ershoudaili" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+ <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/shoping_cart"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Publish_Activity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Product_display"
+            android:label="display" >
+        </activity>
+        <activity
+            android:name=".Home_page"
+            android:label="Market"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Forget_code"
+            android:label="forget code" >
+        </activity>
+        <activity
+            android:name=".Enroll"
+            android:label="Enroll" >
+        </activity>
+        <activity
+            android:name=".Success"
+            android:label="Success" >
+        </activity>
+        <activity
+            android:name=".Personal_center"
+            android:label="Personal Center" >
+        </activity>
+        <activity
+            android:name=".My_store"
+            android:label="My Store" >
+        </activity>
+        <activity
+            android:name=".Product_list"
+            android:label="@string/title_activity_product_list" >
+        </activity>
+        <activity
+            android:name=".Product_show"
+            android:label="@string/title_activity_product_show" >
+        </activity>
+        <activity
+            android:name=".assortment"
+            android:label="@string/title_activity_assortment" >
+        </activity>
+        <activity
+            android:name=".Personal_Information"
+            android:label="@string/title_activity_personal__information" >
+        </activity>
+        <activity
+            android:name=".Transaction_records"
+            android:label="@string/title_activity_transaction_records" >
+        </activity>
+
+        <service android:name=".ConnectService" >
+        </service>
+
+        <activity
+            android:name=".identity_verification"
+            android:label="@string/title_activity_identity_verification" >
+        </activity>
+        <activity
+            android:name=".Store_page"
+            android:label="@string/title_activity_store_page" >
+        </activity>
+        <activity
+            android:name=".Personal_center_for_customer"
+            android:label="@string/title_activity_personal_center_for_customer" >
+        </activity>
+        <activity
+            android:name=".Store_product"
+            android:label="@string/title_activity_store_product" >
+        </activity>
+        <activity
+            android:name=".Store_order"
+            android:label="@string/title_activity_store_order" >
+        </activity>
+    </application>
+
+</manifest>
